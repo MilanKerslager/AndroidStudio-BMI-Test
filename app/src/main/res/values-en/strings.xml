@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vyska">Height</string>
+    <string name="vypocti">Calculate!</string>
+    <string name="zadejVahu">Weight (kg)</string>
+    <string name="zadejVysku">Height (cm)</string>
+    <string name="neurceno">" "</string>
+    <string name="ideal">Ideal</string>
+    <string name="nadvaha">OverWeight</string>
+    <string name="vaha">Weight</string>
+    <string name="podvyziva">Malnurition</string>
+    <string name="app_name">BMI (Test)</string>
+</resources>

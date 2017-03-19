@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Kalkulačka (Test)</string>
+    <string name="vaha">Váha</string>
+    <string name="vyska">Výška</string>
+    <string name="bmi" translatable="false">BMI:</string>
+    <string name="vypocti">Vypočti!</string>
+    <string name="zadejVahu">Váha (kg)</string>
+    <string name="zadejVysku">Výška (cm)</string>
+    <string name="neurceno">" "</string>
+    <string name="ideal">Ideální</string>
+    <string name="podvyziva">Podvýživa</string>
+    <string name="nadvaha">Nadváha</string>
+</resources>

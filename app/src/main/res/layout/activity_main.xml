@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.kerslager.android.test.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/vaha"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextVaha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/editTextVaha" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="@string/vyska"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextVyska"
+        app:layout_constraintRight_toRightOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onButtonPress"
+        android:text="@string/vypocti"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextVyska"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVyska" />
+
+    <EditText
+        android:id="@+id/editTextVaha"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/zadejVahu"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextVyska"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/zadejVysku"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextVaha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVaha" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewVysledek"
+        app:layout_constraintRight_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewVysledek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/neurceno"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textViewKategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewVysledek"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVysledek" />
+</android.support.constraint.ConstraintLayout>
